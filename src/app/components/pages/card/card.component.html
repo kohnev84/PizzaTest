@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="card">
+        <div>
+            <img [src]="product.image" alt="" class="pizza">
+            <p>{{product.name}}</p>
+            <p>{{product.price}}</p>
+            <p>{{product.weight}}</p>
+            <p>{{product.components}}</p>
+        </div>
+        <button class="plus" (click)="increaseQuantity()">+</button>
+        <input type="number" class="field" [value]="quantity">
+        <button class="minus" (click)="decreaseQuantity()">-</button>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+</div>
